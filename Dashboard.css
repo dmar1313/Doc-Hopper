@@ -1,0 +1,27 @@
+.dashboard-container {
+  display: flex;
+}
+.sidebar {
+  /* Styles for the sidebar */
+}
+.main-content {
+  flex-grow: 1;
+}
+.top-bar {
+  /* Styles for the top bar */ 
+}
+.map-and-lists {
+  display: flex;
+}
+.map-area {
+  /* Styles for the map area */
+}
+.lists-side {
+  /* Styles for the list areas on the side of the map */
+}
+.large-list {
+  /* Styles for the large list area */
+}
+.quick-search {
+  /* Styles for the quick search box */
+}

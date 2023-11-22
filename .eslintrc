@@ -1,0 +1,17 @@
+{
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module",
+    "requireConfigFile": false, // This option means ESLint doesn't require a separate ESLint configuration file for each file.
+    "ecmaFeatures": {
+      "jsx": true // This enables ESLint to parse JSX syntax.
+    }
+  },
+  "extends": [
+    "react-app", // Extends the default CRA ESLint configuration.
+    "react-app/jest", // Extends the CRA ESLint configuration for Jest.
+    "plugin:react/recommended" // Extends recommended rules for React.
+  ]
+  // You can add "rules" here, outside the "extends" block
+}

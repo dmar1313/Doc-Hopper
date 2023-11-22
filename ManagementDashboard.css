@@ -1,0 +1,13 @@
+/* src/ManagementDashboard.css */
+
+.ManagementDashboard {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.ManagementDashboard h1 {
+  font-size: 2em;
+  color: #333;
+}

@@ -1,0 +1,93 @@
+/* Base styles for the dark theme */
+body {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.homepage-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 50px; /* Keep sidebar narrow on mobile */
+  transition: width 0.3s ease-in-out;
+}
+
+.sidebar.open {
+  width: 250px; /* Wider when opened */
+}
+
+.sidebar.closed {
+  width: 50px; /* Narrow when closed */
+}
+.sidebar-link {
+  color: #ff0000;
+  font-size: 18px;
+  font-style: italic;
+  text-decoration: none;
+  display: block;
+  padding: 10px 0;
+}
+
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-nav-bar {
+.top-nav-bar {
+  background-color: #03031b;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+}
+
+.top-nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.upper-section {
+  display: flex;
+  flex: 1;
+}
+
+.left-area, .right-area {
+  flex: 1; /* Smaller areas */
+  /* Add additional styles */
+   background-color: #121117; /* Example green color */
+}
+
+.middle-area {
+  flex: 2; /* Largest area */
+  /* Add additional styles */
+  background-color: #8183a7; /* Example red color */
+}
+
+.lower-section {
+  flex: 1;
+  background-color: #021329; /* Background for the bottom section */
+  /* Add additional styles */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .sidebar {
+    width: 50px; /* Keep sidebar narrow on mobile */
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+
+  .upper-section, .lower-section {
+    flex-direction: column;
+  }
+}
